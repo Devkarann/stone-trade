@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">Enter No 1 <input type="text" id="one"></div>
+    <div id="div 2">Enter No 2 <input type="text"  id="two"></div>
+   <div id="div3">
+    <span><button id="sum" onclick="s()">Sum</button></span>
+    
+   </div> 
+   <div id="change">
+    ans
+   </div>
+</body>
+<script>
+    let s = "to chaliyee shuru krte hai";
+    let count=0;
+    let sum =0;
+    for(let i=0; i<s.length; i++){
+        if(s.charAt(i) != " "){
+            count ++;
+            if(count >sum){
+                sum = count;
+            }
+        }
+        else if (s.charAt(i) == " "){
+            count = 0;
+        }
+    }
+    console.log(sum);
+            
+</script>
+</html>

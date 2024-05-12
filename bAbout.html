@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stone</title>
+
+  <style>
+    /* Basic reset for padding and margins */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Navigation bar styles */
+    nav {
+      position: fixed; /* Position the navigation bar */
+      top: 0; /* Place it at the top */
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+      background-color: rgba(51, 51, 51, 0.8); /* Set the background opacity */
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .logo a {
+      color: #fff;
+      font-size: 28px;
+      text-decoration: none;
+      font-weight: bold;
+      padding-left: 20px;
+    }
+
+    .logo a:hover {
+      color: #f8c931;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      background-color: #f8c931;
+      color: #333;
+    }
+
+    .right-nav button {
+      background-color: #f8c931;
+      color: #333;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 5px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    .right-nav button:hover {
+      background-color: #fff;
+      color: #f8c931;
+    }
+
+    body {
+      background-color: burlywood;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    .container {
+      margin-top: 100px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 5px 3px 7px rgb(49, 44, 44);
+      margin-bottom: 20px;
+    }
+
+    .main-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    
+    .container{
+        
+        
+        margin-top: 150px;
+       margin: 20px;
+        padding: 30px;
+        height: 60%;
+        width: 40%;
+        background-color: brown;
+        color: #fff;
+        border-radius: 30px 30px;
+        border-color: #fff;
+        border: 20px;
+        box-shadow: 15px 15px 15px rgb(55, 2, 9);
+    }
+    .background-image {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background-image: url(img/CoverPhoto2\ \(1\).JPG);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          z-index: -1;
+        }
+        #main-container{
+           
+           height: 100vh;
+           padding: 40px;
+           background-color: rgba(90, 43, 29, 0.8);
+
+       }
+
+       /* Footer styles */
+       footer {
+          background-color: rgba(51, 51, 51, 0.8);
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+        }
+        
+        footer p {
+          margin: 0;
+        }
+    
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="#">Logo</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="b.html">Home</a></li>
+        <li><a href="bAbout.html">About-Us</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+      <div class="right-nav">
+        <button>Contact Us</button>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="background-image"></div>
+
+  <div id="main-container">
+    <div class="main-cont">
+        <div class="container">
+            <h1>YOUR TRADING PARTNER</h1>
+        
+            We are an Indian dimensional stone trading company. 
+            We are here to simplify the reach of Indian dimensional stones to the world and create a better buying experience
+            We have created a unique service providing platform in the dimensional stones industry that fills the gaps left by others in selling and buying of dimensional stones, led by passionate problem solver Mining & computer science engineers. 
+            We are poised to become the most trusted place to do business in dimensional stones
+            
+          </div>
+          <div class="container">
+             <h1>Our Vision</h1>
+             Delivering trustworthy experiences that you cherish for a lifetime
+          </div>
+        
+          <div class="container">
+            <h1>Our Values</h1>
+            TO BE THE FIRST CHOICE  FOR CONSUMERS AND PARTNERS IN THEIR JPURNEY  OF DISCOVERING AND BUYING OF MINERALS. 
+            WE DO THAT WITH DATA , DESIGN ,TECHNOLOGY AND ABOVE ALL THE PASSION OF OUR PEOPLE , WHILE DELIEVERNG VALUES TO OUR SHAREHOLDERS
+         </div>
+      </div>
+  </div>
+ 
+  <footer>
+    <p>&copy; StoneTradePark. All rights reserved.</p>
+  </footer>
+
+ 
+
+  <script>
+
+     document.querySelector(".right-nav button").addEventListener("click", function() {
+          
+          window.location.href = "bContact.html";
+      });
+  </script>
+</body>
+
+</html>

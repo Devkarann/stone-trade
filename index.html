@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone</title>
+
+    <style>
+        /* Basic reset for padding and margins */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        
+        /* Navigation bar styles */
+        nav {
+          position: fixed; /* Position the navigation bar */
+          top: 0; /* Place it at the top */
+          left: 0;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 80px;
+          background-color: rgba(51, 51, 51, 0.8); /* Set the background opacity */
+          color: #fff;
+          font-size: 18px;
+        }
+        
+        .logo a {
+          color: #fff;
+          font-size: 28px;
+          text-decoration: none;
+          font-weight: bold;
+          padding-left: 20px;
+        }
+        
+        .logo a:hover {
+          color: #f8c931;
+        }
+        
+        .nav-links {
+          list-style: none;
+          display: flex;
+        }
+        
+        .nav-links li a {
+          color: #fff;
+          text-decoration: none;
+          padding: 20px;
+          transition: all 0.3s ease;
+        }
+        
+        .nav-links li a:hover {
+          background-color: #f8c931;
+          color: #333;
+        }
+        
+        .right-nav button {
+          background-color: #f8c931;
+          color: #333;
+          border: none;
+          padding: 10px 20px;
+          font-size: 18px;
+          border-radius: 5px;
+          margin-right: 20px;
+          cursor: pointer;
+        }
+        
+        .right-nav button:hover {
+          background-color: #fff;
+          color: #f8c931;
+        }
+        
+        body {
+          margin-top: 400px; /* Adjust the margin-top value to match the height of your navigation bar */
+          background-image: url(img/CoverPhoto2\ \(1\).JPG);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          font-family: Arial, sans-serif;
+          position: relative;
+          opacity: 0.8; /* Set the background image opacity */
+        }
+        
+        .text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin-top: 20px;
+        }  
+        
+        .text h1, .text h3, .text h5 {
+          color: black;
+          text-align: center;
+          text-shadow: 4px 10px 12px rgb(255, 255, 255);
+          margin-bottom: 10px; /* Add margin at the bottom of each heading */
+           /* Add shadow effect to headings */
+        }
+        .text h1:hover{
+            color: white;
+            text-shadow: 7px 9px 5px rgba(0, 0, 0, 1);
+        }
+        .text h5:hover{
+          color: white;
+            text-shadow: 4px 4px 5px rgba(0, 0, 0, 1);
+        }
+        .text h3:hover{
+          color: white;
+            text-shadow: 4px 4px 5px rgba(0, 0, 0, 1);
+        }
+
+        
+        .text button {
+          background-color: #f8c931;
+          color: #333;
+          border: none;
+          padding: 10px 20px;
+          font-size: 18px;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-top: 20px;
+        }
+        
+        .text button:hover {
+          background-color: #fff;
+          color: black;
+        }
+        .text h1{
+          font-size: 500%;
+        }
+        .text h3{
+          font-size: 200%;
+        }
+        .text h5{
+          font-size: 150%;
+        }
+        
+        /* Footer styles */
+        footer {
+          background-color: rgba(51, 51, 51, 0.8);
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+        }
+        
+        footer p {
+          margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <a href="#">Logo</a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="b.html">Home</a></li>
+            <li><a href="bAbout.html">About-Us</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <div class="right-nav">
+            <button>Contact Us</button>
+          </div>
+        </nav>
+    </header> 
+    
+    <div class="text">
+        <h1>S T O N E T R A D E P A R K . C O M</h1>
+        <h3>YOUR TRADING PARTNER</h3>
+        <h5>We  are  Indian  dimensional  stone  trading  company </h5>
+        <button id="shopNowButton">VIEW PRODUCTS</button>
+    </div>
+    
+    <footer>
+      <p>&copy; StoneTradePark. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // Add a click event listener to the "Shop Now" button
+      document.getElementById("shopNowButton").addEventListener("click", function() {
+          // Open a new window or tab with the same URL
+          window.location.href = "shopnow.html";
+      });
+
+      document.querySelector(".right-nav button").addEventListener("click", function() {
+          window.location.href = "bContact.html";
+      });
+    </script>
+</body>
+</html>

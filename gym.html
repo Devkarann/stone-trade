@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devfitness</title>
+</head>
+<style>
+    body{
+        background-image: url(img/hulk.jpg);
+        background-repeat: no-repeat;
+        background-size: 2000px;
+    }
+    .left{
+        position: absolute;
+        display: inline-block;
+        left: 33px;
+        top: 2px;
+        border: 0px solid green ;
+        color: white;
+        
+    }
+    .left img{
+        width: 7%;
+        margin: 6px 7px;
+    }
+    .mid{display: block;
+         width: 33%;
+         margin: 1% auto;
+         
+
+    }
+    .right{
+
+        position: absolute;
+        display: inline-block;
+        right: 25px;
+        top: 33px;
+    
+    }
+    .btn{
+        color: white;
+        margin: 2px;
+        background-color: black
+    
+    }
+    .btn:hover{
+        color:green;
+    }
+    .navbar{
+        display: inline-block;
+
+
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+        color: white;
+        padding: 5px 22px;
+        text-decoration: none;
+        font-size: 110%;
+
+    }
+    .navbar li a:hover{
+        text-decoration: underline;
+        color: green;
+    }
+    .inputs{
+        padding: 200PX 20PX;
+    }
+    .inputs input{
+        border: 5px solid green;
+        display: inline-block;
+        margin: 4px;
+        padding: 5px;
+        background-color: white4;
+        color:green;
+    
+    }
+    #heading{
+        color:white;
+    }
+    
+    
+
+
+    
+</style>
+    
+<body>
+    <header>
+        <div class="left">
+            <img src="img/dgym.jpg" alt="">
+        <div>
+            DEV FITNESS
+        </div>
+
+        </div>
+        <div class="mid">
+            <nav>
+                <ul class="navbar">
+                    <li>
+                        <a href="#">home</a> 
+                        
+                    </li>
+                    <li>
+                        <a href="#">about us</a>
+
+                    </li>
+                    <li>
+                        <a href="#">help </a>
+
+                    </li>
+                    <li>
+                        <a href="#">centre</a>
+
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+        <div class="right">
+            <button class="btn"> call-us</button>
+            <button class="btn"> read-more</button>
+
+        </div>
+    </header>
+    <form action="backphp" class="inputs">
+        <div>
+        <h2 id="heading"> BEST GYM IN BEAWAR</h2>
+        </div>
+        <br>
+        <div>
+             <input type="text"  placeholder=" Enter your name">
+        </div>
+        <br>
+        <div>
+            <input type="text" placeholder="Enter your age">
+        </div>
+        <br>
+    
+        <div>
+            <input type="text" placeholder="Enter your phone no">
+        </div>
+        <br>
+        <div>
+            <input type="text" placeholder="Enter your locality">
+        </div>
+
+    </form>
+</body>
+</html>

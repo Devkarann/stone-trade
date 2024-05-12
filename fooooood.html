@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is food website</title>
+</head>
+<link rel="stylesheet" href="css/foodweb.css">
+<style>
+    #navigation{
+        position: relative;
+        display: flex;
+    }
+
+    #navigation ul{
+        display: flex;  
+    }
+
+    #navigation ul li{
+        list-style: none;
+        font-size: 17px;
+        font-family: cursive;  
+        
+    }
+
+    #navigation ul li a{
+        display: block;
+        margin: 37px;
+        padding: 35px;
+        text-decoration: none;
+        color:white;
+        
+        
+        
+    }
+    #navigation ul li a:hover{
+        color:yellow;
+    }
+    #logo{
+        display: flex;
+        
+        margin: 20px;
+        padding:20px ;
+        
+    }
+    #logo img{
+        height: 100px;
+        width: 150px;
+    
+    }
+    #navigation::before{
+        content: "";
+        background-color: #c423b087;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        
+    }
+    #home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: cursive;
+        position: relative;
+        padding: 759px;
+        
+       
+
+    }
+    #home::before{
+        content: "";
+        background: url(foooodiessss.jpg) no-repeat center center/cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.7;
+
+    }
+    .heading{
+        font-size: 1.5rem;
+        color: blue;
+    }
+    #home p{
+        color: blue;
+        font-size: 20px;
+    }
+
+
+
+
+
+
+    #niche{
+        position: relative;
+       
+
+    }
+    #niche::before{
+        content: "";
+        background-color: #c423b087;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        
+
+    }
+    #boxes{
+        display: flex;
+    }
+    #first{
+        
+        border-radius: 51%;
+        color: white;
+        font-family: cursive;
+        padding: 40px;
+        margin: 40px;
+        
+     }
+     
+    
+
+    #second{
+        
+        border-radius: 51%;
+        font-family: cursive;
+        color: white;
+        padding: 40px;
+        margin: 40px;
+
+        
+        
+        
+
+    }
+    #third{
+        
+        border-radius: 51%;
+        color: white;
+        font-family: cursive;
+        padding: 40px;
+        margin: 40px;
+        
+        
+        
+
+    }
+    .head{
+        text-align: center;
+    }
+    .para{
+        text-align: center;
+
+    }
+
+    #niche .image{
+        display: block;
+        margin: auto;
+        height: 176px;
+        width: 262px;
+        background-color: pink;
+    }
+    .mainheading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 67px;
+        font-family: cursive;
+        color: rgb(255, 255, 255);
+        padding: 100px;
+        margin: 0px;
+    }
+
+
+
+
+
+    #client{
+        position: relative;
+
+    }
+    #client::before{
+        content: "";
+        background: url(ourclient.jpg) no-repeat center center/cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+
+    }
+    #headingno2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+    }
+    #clientimg{
+        display: flex;
+        justify-content: center;
+        padding: 323px;
+    }
+    #client img{
+        padding: 112px;
+    }
+
+
+
+    #contact{
+        position: relative;
+    }
+    #contact::before{
+        content: "";
+        background-color: #c423b087;
+        position: absolute;
+        height: 200%;
+        width: 100%;
+        z-index: -1;
+        
+    }
+    
+
+    .headingno3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 67px;
+        font-family: cursive;
+        color:white ;
+        height: 297px;
+        margin: 0px;
+    }
+    #inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+        padding: 40px;
+        z-index: -1;
+    }
+
+</style>
+
+<body>
+    <nav id="navigation">
+        <div id="logo">
+            <img src="foodie.png" alt="maa ki">
+
+        </div>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">HELP</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+
+
+    <section id="home">
+        <h1 class="heading">well come to online food site</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, assumenda deserunt. Cum sapien!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptas voluptatum iure nam ex est.</p>
+        <button>order</button>
+    </section>
+
+
+
+    <section id="niche">
+        <h1 class="mainheading"> OUR SERVICES</h1>
+        <div id="boxes">
+           <div id="first">
+              <h1 class="head">Food catering</h1>
+              <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum? Veritatis laboriosam magnam accusamus deleniti.</p>
+              <img class="image" src="second.png" alt="error">
+
+            </div>
+            <div id="second">
+               <h1 class="head">Bulk order</h1>
+               <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum? Veritatis laboriosam magnam accusamus deleniti.</p>
+               <img class="image"  src="first.png" alt="error">
+
+
+           </div>
+           <div id="third">
+               <h1 class="head">Online service</h1>
+               <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum? Veritatis laboriosam magnam accusamus deleniti.</p>
+               <img class="image"   src="333.png" alt="error">
+           </div>
+        </div>
+    </section>
+
+
+    <section id="client">
+        <h1 id="headingno2" >Our clients</h1>
+        <div id="clientimg">
+            <div>
+                <img src="" alt="error">
+            </div>
+            <div>
+                <img src="" alt="error">
+            </div>
+            <div>
+                <img src="" alt="error">
+            </div>
+            <div>
+                <img src="" alt="error">
+            </div>
+            <div>
+                <img src="" alt="error">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact">
+        <h1 class="headingno3">Contact us</h1>
+
+        <form action="backphp" id="inputs">
+            
+            <div class="saare">
+                <label for="name">Name</label>
+                 <input type="text"  placeholder=" Enter your name">
+            </div>
+            <br>
+        
+            <div class="saare">
+                <label for="locality">locality</label>
+                <input type="text" placeholder="Enter your locality">
+            </div>
+            <br>
+            
+        
+            <div class="saare"> 
+                <label for="phoneno">Phoneno</label>
+                <input type="text" placeholder="Enter your phone no">
+            </div>
+            <br>
+            
+            <div class="saare">
+                <label for="mail">Email</label>
+                <input type="text" placeholder="Enter your email">
+            </div>
+            <br>
+    
+        </form>
+    </section>
+
+
+   
+</body>
+
+</html>

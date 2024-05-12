@@ -1,0 +1,85 @@
+body{
+    background-image: url(img/whetherbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+
+}
+.main-app{
+    
+    
+    width: 550px;
+    
+    margin: 50px auto;
+    
+    margin-top: 100px;
+    
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    
+    padding: 20px;
+    
+    text-align: center;  
+    
+}
+.searchinputnox{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 100px;
+    width: 100%;
+}
+.input-box{
+    width: 90%;
+    text-align: center;
+    font-family: cursive;
+    font-size: xx-large;
+}
+.weather-body{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+   padding: 20px;
+   margin: 22px;
+
+    background-color: aqua;
+}
+.whether-status{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    padding: 40px;
+}
+.city{
+   padding: 10px;
+   font-size: xx-large;
+
+}
+.date{
+    font-size: xx-large;
+}
+.temp{
+    font-size: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.min-max{
+    padding: 20px;
+    font-size: xx-large;
+}
+.whether{
+    font-size: xx-large;
+}
+.image img{
+    padding: 20px;
+
+    width: 150px;
+    height: 150px;
+
+    
+    
+}

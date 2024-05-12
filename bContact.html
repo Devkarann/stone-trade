@@ -1,0 +1,325 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Stone - Contact</title>
+    
+      <style>
+        /* Basic reset for padding and margins */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+    
+        /* Navigation bar styles */
+        nav {
+          position: fixed; /* Position the navigation bar */
+          top: 0; /* Place it at the top */
+          left: 0;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 80px;
+          background-color: rgba(51, 51, 51, 0.8); /* Set the background opacity */
+          color: #fff;
+          font-size: 18px;
+        }
+    
+        .logo a {
+          color: #fff;
+          font-size: 28px;
+          text-decoration: none;
+          font-weight: bold;
+          padding-left: 20px;
+        }
+    
+        .logo a:hover {
+          color: #f8c931;
+        }
+    
+        .nav-links {
+          list-style: none;
+          display: flex;
+        }
+    
+        .nav-links li a {
+          color: #fff;
+          text-decoration: none;
+          padding: 20px;
+          transition: all 0.3s ease;
+        }
+    
+        .nav-links li a:hover {
+          background-color: #f8c931;
+          color: #333;
+        }
+    
+        .right-nav button {
+          background-color: #f8c931;
+          color: #333;
+          border: none;
+          padding: 10px 20px;
+          font-size: 18px;
+          border-radius: 5px;
+          margin-right: 20px;
+          cursor: pointer;
+        }
+    
+        .right-nav button:hover {
+          background-color: #fff;
+          color: #f8c931;
+        }
+    
+        body {
+          background-color: burlywood;
+          font-family: Arial, sans-serif;
+          color: #333;
+        }
+    
+        .container {
+          margin-top: 100px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: auto;
+          margin-top: 100px;
+        }
+    
+        h1 {
+          font-size: 36px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+    
+        p {
+          font-size: 25px;
+          line-height: 1.5;
+          margin-bottom: 20px;
+          color: black;
+          
+          
+        }
+    
+        @keyframes marquee {
+          0% {
+            transform: translateX(-100%);
+          }
+          100% {
+            transform: translateX(100%);
+          }
+        }
+    
+        form {
+          margin-top: 50px;
+          background-color: brown;
+          padding: 80px;
+          border-radius: 30px;
+          box-shadow: 15px 15px 15px rgb(55, 2, 9);
+          color: #fff;
+          text-shadow: 5px 3px 7px rgb(49, 44, 44
+    
+    );
+        }
+    
+        .form-group {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+          align-items: flex-start;
+        }
+    
+        .form-group label {
+          font-size: 18px;
+          margin-bottom: 5px;
+        }
+    
+        .form-group input,
+        .form-group textarea {
+          width: 300px;
+          padding: 10px;
+          font-size: 16px;
+        }
+    
+        .form-group textarea {
+          height: 150px;
+        }
+    
+        .form-group button {
+          background-color: #f8c931;
+          color: #333;
+          border: none;
+          padding: 10px 20px;
+          font-size: 18px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+    
+        .form-group button:hover {
+          background-color: #fff;
+          color: #f8c931;
+        }
+    
+        .error {
+          color: red;
+          font-size: 14px;
+          margin-top: 5px;
+        }
+        #big-container{
+           
+            height: 100vh;
+            padding: 40px;
+            background-color: rgba(90, 43, 29, 0.8);
+
+        }
+        .background-image {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background-image: url(img/CoverPhoto2\ \(1\).JPG);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          z-index: -1;
+        }
+        /* Footer styles */
+        footer {
+          background-color: rgba(51, 51, 51, 0.8);
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+        }
+        
+        footer p {
+          margin: 0;
+        }
+      </style>
+    </head>
+    
+    <body>
+      <header>
+        <nav>
+          <div class="logo">
+            <a href="#">Logo</a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="b.html">Home</a></li>
+            <li><a href="bAbout.html">About-Us</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <div class="right-nav">
+            <button>Contact Us</button>
+          </div>
+        </nav>
+      </header>
+      <div class="background-image"></div>
+    
+      <div id="big-container">
+        <div class="container">
+            
+            
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <div id="nameError" class="error"></div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <div id="emailError" class="error"></div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <div id="messageError" class="error"></div>
+              </div>
+              <div class="form-group">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+      </div>
+
+      <footer>
+        <p>&copy; StoneTradePark. All rights reserved.</p>
+      </footer>
+    
+      <script>
+        // JavaScript code for form validation
+        const form = document.getElementById("contactForm");
+        const nameInput = document.getElementById("name");
+        const emailInput = document.getElementById("email");
+        const messageInput = document.getElementById("message");
+    
+        form.addEventListener("submit", function(event) {
+          event.preventDefault(); // Prevent form submission
+    
+          // Reset error messages
+          clearErrors();
+    
+          // Validate name field
+          if (nameInput.value.trim() === "") {
+            displayError("nameError", "Please enter your name.");
+            return;
+          }
+    
+          // Validate email field
+          if (emailInput.value.trim() === "") {
+            displayError("emailError", "Please enter your email.");
+            return;
+          }
+    
+          // Check if email is valid
+          if (!isValidEmail(emailInput.value.trim())) {
+            displayError("emailError", "Please enter a valid email address.");
+            return;
+          }
+    
+          // Validate message field
+          if (messageInput.value.trim() === "") {
+            displayError("messageError", "Please enter your message.");
+            return;
+          }
+    
+          // If all validations pass, submit the form
+          // You can add your code here to handle the form submission
+          alert("Form submitted successfully!");
+          form.reset();
+        });
+    
+        function displayError(id, message) {
+          const errorElement = document.getElementById(id);
+          errorElement.innerText = message;
+        }
+    
+        function clearErrors() {
+          const errorElements = document.getElementsByClassName("error");
+          for (let i = 0; i < errorElements.length; i++) {
+            errorElements[i].innerText = "";
+          }
+        }
+    
+        function isValidEmail(email) {
+          // Regular expression to check email format
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return emailPattern.test(email);
+        }
+      </script>
+    </body>
+    
+    </html>
+  

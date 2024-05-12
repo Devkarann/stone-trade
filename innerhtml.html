@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    
+    
+   #btn{
+
+    background-color: blue;
+    color: black;
+    width: 50vh;
+    height: 40vh;
+    font-size: xx-large;
+   }
+   #btn:hover{
+    color: white;
+    cursor: pointer;
+   }
+</style>
+<body>
+    
+        <input id="btn" type="button" value="click me" onclick="change(1)">
+   
+
+    <script>
+        var count =0;
+        function change(x){
+            var x;
+            if(x==1){
+                count++
+            }
+            if(count==1){
+                document.getElementById('btn').style.backgroundColor='green';
+            }
+            else if(count==2){
+                document.getElementById('btn').style.backgroundColor='blue';
+                count = 0;
+            }
+            
+
+        }
+       
+    </script>
+</body>
+</html>

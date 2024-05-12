@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(21, 123, 177);
+}
+
+#container{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.headings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div123{
+   
+    width: 360px;
+    height: 500px;
+}
+
+
+#img1{
+    width: 320px;
+    height: 300px;
+}
+#img2{
+    width: 320px;
+    height: 300px;
+}
+#img3{
+    width: 320px;
+    height: 300px;
+}
+#but{
+    background-color: rgb(27, 61, 5);
+     display: flex;
+     justify-content:center;
+     align-items: center;
+     margin-left: 40%;
+     width: 400px;
+    
+     
+     
+
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    padding: 10%;
+    
+    
+   
+}

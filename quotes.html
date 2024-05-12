@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+         margin: 0%;
+         padding: 0%;
+        }
+        body{
+            background-color: rgb(247, 95, 95);
+        }
+       
+        #main{
+            background-color: rgb(65, 1, 1);
+            color: azure;
+            width: 50%;
+            padding: 70px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 15%;
+            border-radius: 30px;
+            box-shadow: 20px 20px 20px rgb(2, 3, 20);
+            
+            
+            
+            
+        }
+        #quotes{
+            padding: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: x-large;
+            text-shadow: 2px 2px 5px rgb(22, 25, 63);
+        }
+        #author{
+          padding: 20px;
+        }
+        #btn{
+            background-color:rgb(227, 77, 77);
+            font-family: cursive;
+            color: white;
+            padding: 8px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 8px rgb(0, 0, 0);
+        
+        }
+        #btn:hover{
+        
+            
+            cursor: pointer;
+            background-color: azure;
+            color: black;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="quotes"> </div>
+       
+        <div id="author">by devkaran singh</div>
+        
+        <button id="btn" onclick="getquotes()">New Quotes</button>
+       
+    </div>
+    <script>
+
+        let  quotes = document.getElementById('quotes');
+        let author = document.getElementById('author');
+        let realdata = "";
+
+        function get(){
+            let input = Math.floor(Math.random()*10);
+            
+            quotes.innerHTML = realdata[input].text;
+            author.innerHTML = "By~ "+realdata[input].author;
+            
+        }
+
+
+        const getquotes = async() =>{
+            const api = "http://type.fit/api/Quotes";
+            try {
+                let data = await fetch(api); // api ko fetch kr rhe hai yha , data ke naam se
+                realdata = await data.json(); // ab data ko json format mein laa rhe hai
+
+                get(); // function
+
+            } catch (error) {
+                
+            }
+        }
+        getquotes();
+    </script>
+</body>
+</html> 

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(15, 211, 172);
+        }
+       #container{
+        display: flex;
+        justify-content: center;
+        margin-top: 7%;
+      }
+      #change{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      #but{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        
+      }
+      button{
+        width: 200px;
+        margin: 40px ;
+        margin-left: 40px;
+      }
+      button:hover{
+        background-color: green;
+        color: white;
+
+      }
+        
+       
+      
+       
+    </style>
+    
+</head>
+<body>
+    <h1  >Logic gate Question</h1>
+   <div id="container">
+    <div id="container1" >
+        <div id="div1">
+            X1 : <input type="text" id="x1"><br>
+            Y1 : <input type="text" id="y1">
+        </div>
+        
+        
+        <div id="div2" >
+            X2 : <input type="text" id="x2"><br>
+            Y2 : <input type="text" id="y2" >
+        </div>
+        <div id="div3" >
+            X3 : <input type="text" id="x3"><br>
+            Y3 : <input type="text" id="y3">
+        </div>
+    
+    </div>
+    <div>
+        <img src="logicc.png" alt="errorngfjksng">
+   </div>
+   <div id="change">
+    output
+</div>
+   </div>
+   <div id="but">
+    <button onclick="f()">CHECK</button>
+   </div>
+    
+
+    
+    
+</body>
+<script>
+    /// AND gate Work
+    let x1 = document.getElementById('x1').value;
+    let y1 = document.getElementById('y1').value;
+    let and1 = 0;
+    if(x1 == 1 && y1 == 1){
+        and1 = 1;
+    }
+    else{
+        and1 = 0;
+    }
+    /// again AND gate work
+    let x2 = document.getElementById('x2').value;
+    let y2 = document.getElementById('y2').value;
+    let and2 = 0;
+    if(x2 == 1 && y2 == 1){
+        and2 = 1;
+    }
+    else{
+        and2 = 0;
+    }
+    /// OR gate work
+    let x3 = document.getElementById('x3').value;
+    let y3 = document.getElementById('y3').value;
+    let or1 = 0;
+    if(x3 == 0 && y3 == 0){
+        or1 = 0;
+    }
+    else{
+        or1 = 1;
+    }
+    /// now we have value of and1 , and2 , or1
+    /// NAND gate Work 
+    let nand =0;
+    if(and1 == 1 && and2 == 1){
+        nand = 0;
+
+    }
+    else{
+        nand = 1;
+    }
+    /// or 2 gate work
+    let or2 = 0;
+    if(and2 == 0 && or1 == 0){
+        or2 = 0;
+    }
+    else{
+        or2 = 1;
+    }
+    /// final XOR gate work
+    let final = 0;
+    if((nand == 0 && or2 == 0) || nand == 1 && or2 == 1 ){
+        final = 0;
+    }
+    else{
+        final = 1;
+    }
+    function f(){
+        document.getElementById('change').innerHTML = final;
+    }
+
+
+
+</script>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone</title>
+
+    <style>
+        /* Basic reset for padding and margins */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        
+        /* Navigation bar styles */
+        nav {
+          position: fixed; /* Position the navigation bar */
+          top: 0; /* Place it at the top */
+          left: 0;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 80px;
+          background-color: rgba(51, 51, 51, 0.8); /* Set the background opacity */
+          color: #fff;
+          font-size: 18px;
+        }
+        
+        .logo a {
+          color: #fff;
+          font-size: 28px;
+          text-decoration: none;
+          font-weight: bold;
+          padding-left: 20px;
+        }
+        
+        .logo a:hover {
+          color: #f8c931;
+        }
+        
+        .nav-links {
+          list-style: none;
+          display: flex;
+        }
+        
+        .nav-links li a {
+          color: #fff;
+          text-decoration: none;
+          padding: 20px;
+          transition: all 0.3s ease;
+        }
+        
+        .nav-links li a:hover {
+          background-color: #f8c931;
+          color: #333;
+        }
+        
+        .right-nav button {
+          background-color: #f8c931;
+          color: #333;
+          border: none;
+          padding: 10px 20px;
+          font-size: 18px;
+          border-radius: 5px;
+          margin-right: 20px;
+          cursor: pointer;
+        }
+        
+        .right-nav button:hover {
+          background-color: #fff;
+          color: #f8c931;
+        }
+        
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+        }
+        
+        /* Background image styles */
+        .background-image {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background-image: url(img/CoverPhoto2\ \(1\).JPG);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          z-index: -1;
+        }
+        
+        /* Product card styles */
+        .product-card-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          background-color: rgba(90, 43, 29, 0.8);
+        }
+        
+        .product-card {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 50px;
+        }
+        
+        .product-card .card {
+          width: 250px;
+          background-color: #fff;
+          margin: 20px;
+          padding: 20px;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          text-align: center;
+          background-color: burlywood;
+        }
+        
+        .product-card .card img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 20px;
+        }
+        
+        .product-card .card h4 {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+        
+        .product-card .card p {
+          font-size: 16px;
+          margin-bottom: 20px;
+        }
+        
+        .product-card .card button {
+          background-color: #f8c931;
+          color: #333;
+          border: none;
+          padding: 10px 20px;
+          font-size: 18px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        
+        .product-card .card button:hover {
+          background-color: #fff;
+          color: #f8c931;
+        }
+        
+        .bottom-buttons {
+          display: flex;
+          justify-content: center;
+          margin-top: 50px;
+          margin-bottom: 20px;
+        }
+        
+        .bottom-buttons button {
+          background-color: #f8c931;
+          color: #333;
+          border: none;
+          padding: 10px 20px;
+          font-size: 18px;
+          border-radius: 5px;
+          margin: 0 10px;
+          cursor: pointer;
+        }
+        
+        .bottom-buttons button:hover {
+          background-color: #fff;
+          color: #f8c931;
+        }
+
+        /* Footer styles */
+        footer {
+          background-color: rgba(51, 51, 51, 0.8);
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+        }
+        
+        footer p {
+          margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <a href="#">Logo</a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="b.html">Home</a></li>
+            <li><a href="bAbout.html">About-Us</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <div class="right-nav">
+            <button>Contact Us</button>
+          </div>
+        </nav>
+    </header>
+
+    <div class="background-image"></div>
+
+    <div class="product-card-container">
+      <div class="product-card">
+        <div class="card">
+          <img src="img/hulk.jpg" alt="Product 1">
+          <h4>Product 1</h4>
+          <p>$19.99</p>
+        </div>
+        <div class="card">
+          <img src="img/devmusicicon.jpg" alt="Product 2">
+          <h4>Product 2</h4>
+          <p>$29.99</p>
+        </div>
+        <div class="card">
+          <img src="img/foodd.jpg" alt="Product 3">
+          <h4>Product 3</h4>
+          <p>$39.99</p>
+        </div>
+        <div class="card">
+          <img src="img/hulk.jpg" alt="Product 4">
+          <h4>Product 4</h4>
+          <p>$49.99</p>
+        </div>
+        <div class="card">
+          <img src="img/devmusicicon.jpg" alt="Product 5">
+          <h4>Product 5</h4>
+          <p>$59.99</p>
+        </div>
+        <div class="card">
+          <img src="img/foodd.jpg" alt="Product 6">
+          <h4>Product 6</h4>
+          <p>$69.99</p>
+        </div>
+        <div class="card">
+          <img src="img/hulk.jpg" alt="Product 7">
+          <h4>Product 7</h4>
+          <p>$79.99</p>
+        </div>
+        <div class="card">
+          <img src="img/devmusicicon.jpg" alt="Product 8">
+          <h4>Product 8</h4>
+          <p>$89.99</p>
+        </div>
+        <div class="card">
+          <img src="img/foodd.jpg" alt="Product 9">
+          <h4>Product 9</h4>
+          <p>$99.99</p>
+        </div>
+        <div class="card">
+          <img src="img/hulk.jpg" alt="Product 10">
+          <h4>Product 10</h4>
+          <p>$109.99</p>
+        </div>
+      </div>
+      
+      <div class="bottom-buttons">
+        <button id="buttonJdp">Jodhpur</button>
+        <button id="buttonMica2">Mica</button>
+      </div>
+    </div>
+
+    <footer>
+        <p>&copy; StoneTradePark. All rights reserved.</p>
+      </footer>
+
+    <script>
+      document.querySelector(".right-nav button").addEventListener("click", function() {
+          window.location.href = "bContact.html";
+      });
+
+      document.getElementById("buttonJdp").addEventListener("click", function() {
+          // Open a new window or tab with the same URL
+          window.location.href = "jdp.html";
+      });
+
+      document.getElementById("buttonMica2").addEventListener("click", function() {
+          // Open a new window or tab with the same URL
+          window.location.href = "mica.html";
+      });
+    </script>
+</body>
+</html>
